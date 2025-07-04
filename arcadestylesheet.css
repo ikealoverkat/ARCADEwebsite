@@ -1,0 +1,218 @@
+html {
+  scroll-behavior: smooth;
+}
+ @font-face {
+    font-family: VCROSDmono;
+    src: url(VCR_OSD_MONO_1.001.ttf); 
+  } /*main font*/
+  @font-face {
+    font-family:upheaval;
+    src: url(upheavtt.ttf);
+  } /*bold font*/
+  body {
+    cursor: url('arcade-cursor.png') 12 12, auto;
+    background-image: linear-gradient(#b8ffbf, #34e5ff);
+    font-family: VCROSDmono;
+    color: #030659;
+    margin:auto;
+    text-shadow:3px 3px 2px #34e5ff, 5px 5px 5px #ffffff;
+  }
+  /*home styling*/
+  div.titlepage {
+    width:100%;
+    height:500%; 
+    margin: 3% 0% 15% 0%;
+  }
+  a.topleft{
+    font-size:55px;
+    color:#030659;
+    padding:4% 4%;
+  }
+  a.topleft:hover {
+    cursor: url('arcade-cursor-point.png') 12 12, auto;
+    color:#34e5ff;
+  }
+  a.signupbutton {
+    font-family: upheaval;
+    font-size:45px;
+    text-align: center;
+    text-decoration:none;
+    display:inline-block;
+    padding:15px;
+    border-radius: 30px;
+    background-color:#F896D8;
+    border-width: 0;
+    color: #030659;
+    box-shadow: 4px 4px #030659, 6px 6px 8px #ffffff;
+  }
+  a.signupbutton:hover {
+      background-color: #ffffff;
+      color:#28459b;
+      cursor: url('arcade-cursor-point.png') 12 12, auto;
+      padding: 25px;
+      border-radius: 40px;
+  }
+
+/*navigation bar styling*/
+  #navbar {
+    background-color:#356aba;
+    box-shadow:5px 5px 5px #030659;
+    position: fixed;
+    top: -70px;
+    width: 100%;
+    transition: top 0.3s; /*transition effect when sliding up/down*/
+  }
+  #navbar a { /*styling the links*/
+    text-align: center;
+    display: inline;
+    font-size:300%;
+    color:#030659;
+    padding: 15px;
+    text-decoration: none;
+  }
+  #navbar a.signupright {
+    text-align: right;
+  }
+   #navbar a:hover { /*styling the links*/
+    background-color:#28459b;
+    color:#ffffff;
+    cursor: url('arcade-cursor-point.png') 12 12, auto;
+  }
+
+/*info*/
+  span.info /*pink box*/ {
+    text-indent: 10px;
+    background-color:#F896D8;
+    margin: 20px 0px;
+    width:100%;
+    padding: 75px;
+    display: flex;
+  }
+  div.info-textbox /*white box*/ {
+    padding: 70px;
+    padding-bottom: 150px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    background-color: #ffffff;
+    width:40%;
+    display: inline-block;
+  }
+  h2.bigtext /*24hrs*/ {
+    line-height:1px;
+    font-family:upheaval;
+    font-size:60px;
+  }
+  img.shrimp24h {
+    margin-bottom: 120px;
+    margin-left: 125px;
+  }
+
+  /*what to do section*/
+  div.whattodoboxes {
+    text-indent: 10px;
+    padding: 1%;
+    margin-top:-4%;
+    background-image: linear-gradient(#f896d8,#e0479e);
+    width: 100%;
+  }
+  a.bigtext {
+    font-family: upheaval;
+    font-size: 350%;
+    text-decoration: none;
+    transition-duration: 0.1s;
+  }
+    a.bigtext:hover {
+    font-family: upheaval;
+    font-size: 400%;
+  }
+
+ /*FAQ header*/
+   div.faq { /*background gradient*/
+    line-height: 15px;
+    background-image: linear-gradient(#e0479e, #34e5ff); 
+    width: 100%;
+    text-indent: 10px;
+    
+  }
+  span.faq-header {
+    background-color: #E0479E;
+    display:flex;
+  }
+  h1.bigtext {
+    line-height: normal;
+    font-family: upheaval;
+    font-size:60px;
+  } 
+  h2.faq-header {
+    line-height: 450%;
+  }/*can't find your question? shoot us an email*/
+  a.faq-header {
+    font-size: 150%;
+    line-height: 610%;
+  } /*email address*/
+  a.faq-header:hover {
+    font-size: 170%;
+    color:#356aba;
+    line-height: 510%;
+    cursor: url('arcade-cursor-point.png') 12 12, auto; 
+  } /*email send hover*/
+
+/*sponsors*/
+div.sponsor {
+  margin-bottom: 4%;
+}
+
+a.biglink {
+  font-size: 200%;
+  font-weight: bold;
+  color:#28459b;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+a.biglink:hover {
+  cursor: url('arcade-cursor-point.png') 12 12, auto;
+  text-shadow: 3px 3px 3px white;
+  font-size: 230%;
+}
+
+  /*FAQ Question Boxes*/
+span.faq-questions-line1 /*strips of boxes*/ {
+  display:flex;
+}
+span.faq-questions-line2 {
+  display:flex;
+}
+div.questionbox /*box style*/{
+  padding: 20px;
+  border-radius: 30px;
+  background-image: linear-gradient(#ffffff, #ffffffb6);
+  width:40%;
+  margin: 10px;
+  line-height: 30px;
+  transition: 0.5s;
+}
+
+div.questionbox:hover {
+  width: 70%;
+  background-color: white;
+}
+
+li {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+a {
+  font-weight: bold;
+  font-size: 200%;
+  transition-duration: 0.3s;
+}
+a:hover {
+  cursor: url('arcade-cursor-point.png') 12 12, auto;
+  color:#E0479E;
+}
+a.parentguide:hover {
+  font-size: 220%;
+}
