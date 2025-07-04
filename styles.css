@@ -134,10 +134,23 @@ html {
     text-align: center;
     border-radius: 40px;
     background-color: #ffffff99;
+    transition-duration: 0.3s;
   }
   div.whattodo-singlebox img {
     border-radius: 30px;
     width: 12vw;
+  }
+
+  img {
+    transition-duration: 0.3s;
+  }
+
+  img:hover {
+    filter: drop-shadow(5px 5px 5px #030659)
+  }
+  div.whattodo-singlebox:hover {
+    padding: 2%;
+    background-color: white;
   }
 
   a.bigtext {
@@ -167,7 +180,11 @@ html {
     line-height: normal;
     font-family: upheaval;
     font-size:60px;
+    transition-duration: 0.3s;
   } 
+  h1.bigtext:hover {
+    font-size: 75px;
+  }
   h2.faq-header {
     line-height: 450%;
   }/*can't find your question? shoot us an email*/
