@@ -119,12 +119,27 @@ html {
 
   /*what to do section*/
   div.whattodoboxes {
+    display: flex;
     text-indent: 10px;
     padding: 1%;
     margin-top:-4%;
     background-image: linear-gradient(#f896d8,#e0479e);
     background-size: 100vw;
   }
+  div.whattodo-singlebox {
+    display: -moz-inline-grid;
+    margin: 1%;
+    padding: 1%;
+    width: 80vw;
+    text-align: center;
+    border-radius: 40px;
+    background-color: #ffffff99;
+  }
+  div.whattodo-singlebox img {
+    border-radius: 30px;
+    width: 12vw;
+  }
+
   a.bigtext {
     font-family: upheaval;
     font-size: 350%;
@@ -251,7 +266,6 @@ a.parentguide:hover {
     font-size: 90%;
     height:min-content;
   }
- 
   /*fixing nav bar*/
   #navbar a {
     font-size: 200%;
@@ -303,6 +317,22 @@ a.parentguide:hover {
    
   div.info-text {
     width: 80vw;
+  }
+  /*fixing what to do section*/
+  span.whattodo {
+    display: grid;
+  }
+  div.whattodoboxes {
+    padding: 6%;
+    display: inline;
+  }
+  div.whattodo-singlebox {
+    margin-top: 5%;
+  }
+  div.whattodo-singlebox img {
+    width: 30vh;
+    margin-top: 5%;
+    text-align: center;
   }
   }
 
