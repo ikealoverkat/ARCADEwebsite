@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
  @font-face {
     font-family: VCROSDmono;
     src: url(VCR_OSD_MONO_1.001.ttf); 
@@ -52,13 +53,16 @@ html {
       padding: 25px;
       border-radius: 40px;
   }
+  h2.titlepage-text {
+    width: 90%;
+  }
 
 /*navigation bar styling*/
   #navbar {
     background-color:#356aba;
     box-shadow:5px 5px 5px #030659;
     position: fixed;
-    top: -70px;
+    top: -150px;
     width: 100%;
     transition: top 0.3s; /*transition effect when sliding up/down*/
   }
@@ -197,6 +201,55 @@ div.questionbox /*box style*/{
 div.questionbox:hover {
   width: 70%;
   background-color: white;
+}
+
+@media screen and (max-width: 1200px) {
+ /*fixing homepage text*/
+  h2.titlepage-text {
+    text-align:center;
+  }
+  a.topleft {
+    font-size: 250%;
+  }
+  /*fixing info box*/
+  div.info-textbox {
+    font-size: 90%;
+    width: 120%;
+    height:min-content;
+  }
+  /*fixing nav bar*/
+  #navbar a {
+    font-size: 200%;
+  }
+ /*fixing the FAQ header*/
+  span.faq-header {
+    display:inline-block;
+    margin-top: 0%;
+    margin-bottom: 6%;
+    margin-right: 5%;
+  }
+  h2.faq-header {
+    line-height: 90%;
+  }
+  a.faq-header {
+    line-height: 90%;
+  }
+  a.faq-header:hover {
+    line-height: 90%;
+  }
+  /*fixing FAQ questions*/
+  span.faq-questions-line1 {
+    display: inline-block;
+  }
+  span.faq-questions-line2 {
+    display: inline-block;
+  }
+    div.questionbox {
+    width: 90%;
+  }
+  div.questionbox:hover {
+    width: 90%;
+  }
 }
 
 li {
