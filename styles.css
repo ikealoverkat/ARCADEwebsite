@@ -16,7 +16,9 @@ html {
     font-family: VCROSDmono;
     color: #030659;
     margin:auto;
-    text-shadow:3px 3px 2px #34e5ff, 5px 5px 5px #ffffff;
+    text-shadow:3px 3px 2px #34e5ff, 5px 5px 5px #ffffff; 
+    overflow-y: scroll;
+    overflow-x:hidden;
   }
   /*home styling*/
   div.titlepage {
@@ -122,9 +124,18 @@ html {
     display: flex;
     text-indent: 10px;
     padding: 1%;
-    margin-top:-4%;
     background-image: linear-gradient(#f896d8,#e0479e);
     background-size: 100vw;
+  }
+   div.whattodoboxes-2 {
+    display: flex;
+    text-indent: 10px;
+    padding: 1%;
+    background-color: #E0479E;
+    background-size: 100vw;
+  }
+  #line2 {
+    background-color: #E0479E;
   }
   div.whattodo-singlebox {
     display: -moz-inline-grid;
@@ -135,6 +146,9 @@ html {
     border-radius: 40px;
     background-color: #ffffff99;
     transition-duration: 0.3s;
+  }
+  div.whattodo-singlbox h2 {
+    word-break: break-all;
   }
   div.whattodo-singlebox img {
     border-radius: 30px;
@@ -175,6 +189,7 @@ html {
   span.faq-header {
     background-color: #E0479E;
     display:flex;
+    word-break: break-all;
   }
   h1.bigtext {
     line-height: normal;
@@ -234,6 +249,7 @@ div.questionbox /*box style*/{
   margin: 10px;
   line-height: 30px;
   transition: 0.5s;
+  word-break: break-all;
 }
 
 div.questionbox:hover {
@@ -258,12 +274,21 @@ a:hover {
 a.parentguide:hover {
   font-size: 220%;
 }
+/*skinnier mobile adjustment*/
+@media screen and (max-width: 900px) {
+  div.questionbox {
+    font-size: 60%;
+    width: 60%;
+    padding-left: 0%;
+  }
+}
+
 /*mobile adjustment*/
 @media screen and (max-width: 1200px) {
  /*fixing homepage text*/
   body {
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x:hidden;
   } 
 
   h2.titlepage-text {
@@ -287,6 +312,15 @@ a.parentguide:hover {
   #navbar a {
     font-size: 200%;
   }
+  /*fix what to do section*/
+  div.whattodo-singlebox h1 {
+    text-align: center;
+    font-size: x-large;
+  }
+  div.whattodo-singlebox h1:hover {
+    text-align: center;
+    font-size: xx-large;
+  }
  /*fixing the FAQ header*/
   span.faq-header {
     display:inline-block;
@@ -306,19 +340,27 @@ a.parentguide:hover {
   /*fixing FAQ questions*/
   span.faq-questions-line1 {
     display: inline-block;
+    padding: 4%;
   }
   span.faq-questions-line2 {
     display: inline-block;
+    padding: 4%;
   }
-    div.questionbox {
+  div.questionbox {
     width: 90%;
   }
-  div.questionbox:hover {
+   div.questionbox:hover {
     width: 90%;
   }
-}
-/*small screen (ex. laptop, tablet) adjustment*/
+
+
+  /*small screen (ex. laptop, tablet) adjustment*/
 @media screen and (max-width: 1800px) {
+    body {
+    overflow-y: scroll;
+    overflow-x:hidden;
+  } 
+
   span.info {
     display: inline-block;
     width: 100vw;
@@ -343,6 +385,10 @@ a.parentguide:hover {
     padding: 6%;
     display: inline;
   }
+   div.whattodoboxes-2 {
+    padding: 6%;
+    display: inline;
+  }
   div.whattodo-singlebox {
     margin-top: 5%;
   }
@@ -355,8 +401,13 @@ a.parentguide:hover {
 
 /*big screen, bigger text*/
 @media screen and (min-width: 1920px) {
+   body {
+    overflow-y: scroll;
+    overflow-x:hidden;
+  } 
   img.shrimp24h {
     margin-left: 10%;
     width: 30vw;
   }
+} 
 }
