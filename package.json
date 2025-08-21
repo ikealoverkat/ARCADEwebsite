@@ -1,16 +1,22 @@
 {
-  "name": "arcade-website-2",
-  "version": "1.0.0",
-  "main": "main.js",
+  "name": "arcade-website-2-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/style.css --watch"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
+  "devDependencies": {
+    "vite": "^7.1.2"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  },
+  "main": "index.js",
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.12",
-    "tailwindcss": "^4.1.12"
-  }
+  "description": ""
 }
