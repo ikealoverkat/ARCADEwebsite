@@ -15,3 +15,4 @@ i used:
 - turns out i used an outdated stylesheet link in my code AND forgot to put "root: /ARCADEwebsite/" in my vite.config.js 💀
 - lesson learned! stop forgetting to add things 😭😭😭
 I worked pretty hard on this website, especially making it responsive! have fun looking at it :D
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
